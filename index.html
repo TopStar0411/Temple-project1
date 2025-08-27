@@ -33,6 +33,7 @@
       rel="stylesheet"
     />
     <link rel="apple-touch-icon" href="img/apple-touch.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- アップルアイコン　-->
   </head>
   <body>
@@ -46,7 +47,7 @@
     ></script>
 
     <header>
-      <div class="bg_bl"></div>
+      <!-- <div class="bg_bl"></div> -->
 
       <h1>
         <a href="index.html"
@@ -117,31 +118,51 @@
       <div id="contents-maker-news"></div>
 
       <div class="pick_up effect">
-        <ul>
-          <li class="effect d_02">
-            <a href="lesson-course.html#course-01">
-              <img src="./src/image/top001.png" alt="プレピアノコース" />
-              <div class="d_03bg">
+        <ul class="grid grid-cols-1 md:grid-cols-3 text-center">
+          <li class="transition duration-300 transform hover:scale-105">
+            <a href="lesson-course.html#course-01" class="block">
+              <img
+                src="./src/image/top001.png"
+                alt="プレピアノコース"
+                class="mx-auto w-4/5 rounded-full"
+              />
+              <div
+                class="mt-4 bg-cyan-400/80 rounded-[100%] px-6 py-4 flex flex-col items-center justify-center text-white whitespace-nowrap overflow-hidden"
+              >
                 プレピアノ<br />
-                <span>ピアノを始める前の練習コース</span>
+                <span class="text-sm">ピアノを始める前の練習コース</span>
               </div>
             </a>
           </li>
-          <li class="effect d_04">
-            <a href="lesson-course.html#course-03">
-              <img src="./src/image/top002.png" alt="ピアノコース" />
-              <div class="d_03bg">
+
+          <li class="transition duration-300 transform hover:scale-105">
+            <a href="lesson-course.html#course-03" class="block">
+              <img
+                src="./src/image/top002.png"
+                alt="ピアノコース"
+                class="mx-auto w-4/5 rounded-full"
+              />
+              <div
+                class="mt-4 bg-cyan-400/80 rounded-[100%] px-6 py-4 flex flex-col items-center justify-center text-white text-[10px] whitespace-nowrap overflow-hidden"
+              >
                 ピアノコース<br />
-                <span>ジャズ、クラシック、ポップス</span>
+                <span class="text-sm">ジャズ、クラシック、ポップス</span>
               </div>
             </a>
           </li>
-          <li class="effect d_06">
-            <a href="lesson-course.html#course-03">
-              <img src="./src/image/top003.png" alt="オーボエコース" />
-              <div class="d_03bg">
+
+          <li class="transition duration-300 transform hover:scale-105">
+            <a href="lesson-course.html#course-03" class="block">
+              <img
+                src="./src/image/top003.png"
+                alt="オーボエコース"
+                class="mx-auto w-4/5 rounded-full"
+              />
+              <div
+                class="mt-4 bg-cyan-400/80 rounded-[100%] px-6 py-4 flex flex-col items-center justify-center text-white text-lg whitespace-nowrap overflow-hidden"
+              >
                 オーボエコース<br />
-                <span>初心者から経験者</span>
+                <span class="text-sm">初心者から経験者</span>
               </div>
             </a>
           </li>

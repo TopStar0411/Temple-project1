@@ -1703,7 +1703,7 @@ SNSボタン
   color: #1bd;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 760px) {
   .h_sns {
     width: 100%;
     display: -webkit-box;
