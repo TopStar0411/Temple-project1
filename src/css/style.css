@@ -887,7 +887,6 @@ footer .box_pr {
 
 .pick_up ul li a div {
   color: #fff;
-  font-size: 32px;
   line-height: 1;
   text-decoration: none;
   text-align: center;
@@ -906,8 +905,7 @@ footer .box_pr {
 }
 /* 説明テキスト（例：ピアノを始める前の練習コース 等）を小さく */
 .pick_up ul li a div span {
-  font-size: 14px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2285,7 +2283,7 @@ Facebook
     width: 70%;
   }
 
-  .pick_up ul li a img {
+  .pick_up img {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
