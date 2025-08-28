@@ -892,11 +892,10 @@ footer .box_pr {
   text-align: center;
   display: block;
   width: 80%;
-  margin-top: -20px;
-  margin-left: -40%;
   position: absolute;
   left: 50%;
-  top: 47%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   font-weight: bold;
   -webkit-transition: 0.2s linear;
   -moz-transition: 0.2s linear;
@@ -905,7 +904,8 @@ footer .box_pr {
 }
 /* 説明テキスト（例：ピアノを始める前の練習コース 等）を小さく */
 .pick_up ul li a div span {
-  /* letter-spacing: 1px; */
+  font-size: 14px;
+  letter-spacing: 1px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -922,6 +922,8 @@ footer .box_pr {
   background-size: cover;
   background-position: center;
   text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 /* pick_up 内画像の中央寄せとレスポンシブ余白調整 */
@@ -943,24 +945,25 @@ footer .box_pr {
 /* 1024px以下でオーバーレイを画像中心にフィットさせる */
 @media screen and (max-width: 1024px) {
   .pick_up ul li a div {
-    width: 80%;
-    left: 50%;
-    top: 50%;
-    margin: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    overflow: hidden;
+    width: 85%;
+    font-size: 28px;
   }
   .pick_up ul li a .d_03bg {
     padding: 12px;
     border-radius: 50%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    white-space: nowrap;
     overflow: hidden;
+  }
+}
+
+/* 640px以下でさらに調整 */
+@media screen and (max-width: 640px) {
+  .pick_up ul li a div {
+    width: 70%;
+    font-size: 24px;
+  }
+  .pick_up ul li a .d_03bg {
+    padding: 8px;
   }
 }
 
@@ -1786,6 +1789,24 @@ SNSボタン
     padding-right: 10px;
     padding-bottom: 10px;
     max-width: 97%;
+  }
+
+  /* left_liリストの位置調整 */
+  .left_li {
+    margin: 20px auto;
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+  .left_li li {
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  .left_li p {
+    margin: 10px 0 20px 0;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   .pick_up ul li {
